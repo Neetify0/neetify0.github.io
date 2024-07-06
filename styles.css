@@ -75,8 +75,8 @@ body {
     display: inline-block;
     padding: 15px 30px;
     border-radius: 30px; /* Rounded corners */
-    background-color: #fff;
-    color: #000;
+    background-color: #000000;
+    color: #ffffff;
     text-decoration: none;
     font-weight: 500;
     font-size: 24px;
@@ -84,8 +84,8 @@ body {
 }
 
 .top-bar .rounded-button:hover {
-    background-color: #000;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .button-grid {
