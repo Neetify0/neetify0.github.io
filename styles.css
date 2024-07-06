@@ -1,4 +1,10 @@
-/* Navbar styles */
+/* Custom CSS */
+body {
+    margin: 0;
+    font-family: 'Lexend', sans-serif;
+    background-color: #fff; /* Set body background to white */
+}
+
 .navbar {
     background-color: #fff; /* White background */
     color: #000; /* Black text color */
@@ -24,16 +30,17 @@
     margin-right: 20px;
 }
 
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
 .nav-links li a {
     text-decoration: none;
     color: #000; /* Black text color */
-    font-family: 'Lexend', sans-serif; /* Lexend font */
-    font-weight: 500; /* Medium weight as preferred */
+    font-weight: 500; /* Medium weight */
     font-size: 20px; /* Slightly larger font size */
-    position: relative; /* Ensure the relative position for pseudo-element */
     transition: color 0.3s ease; /* Smooth transition for color */
-    overflow: hidden; /* Prevents underline overflow */
-    transform: scale(1); /* Initial scale */
+    position: relative; /* Ensure relative positioning for pseudo-element */
 }
 
 .nav-links li a::after {
@@ -54,4 +61,56 @@
     height: 4px; /* Increase underline height */
     background-color: #000; /* Black underline color */
     transform: scaleX(1); /* Expand underline on hover */
+}
+
+.top-bar {
+    background-color: #ffffff; /* Black background for top bar */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: 20px; /* Ensure space below navbar */
+}
+
+.top-bar .rounded-button {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 30px; /* Rounded corners */
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 24px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.top-bar .rounded-button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff; /* White background for grid */
+    margin-top: 20px; /* Ensure space below top bar */
+}
+
+.button {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px; /* Rounded corners */
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #000;
 }
