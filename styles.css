@@ -49,11 +49,6 @@
     transform: scaleX(0); /* Initial hide scale */
 }
 
-.nav-links li a:hover {
-    color: #000; /* Change text color on hover */
-    transform: scale(1.1); /* Zoom effect on hover */
-}
-
 .nav-links li a:hover::after {
     bottom: -4px; /* Adjust underline position */
     height: 4px; /* Increase underline height */
