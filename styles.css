@@ -1,4 +1,3 @@
-/* Custom CSS */
 body {
     margin: 0;
     font-family: 'Lexend', sans-serif;
@@ -63,54 +62,32 @@ body {
     transform: scaleX(1); /* Expand underline on hover */
 }
 
-.top-bar {
-    background-color: #ffffff; /* Black background for top bar */
-    color: #fff; /* White text color */
-    padding: 10px 20px;
-    text-align: center;
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Increased min-width */
+    gap: 10px; /* Reduced gap between buttons */
+    padding: 20px;
+    background-color: #fff; /* White background for grid */
     margin-top: 20px; /* Ensure space below navbar */
 }
 
-.top-bar .rounded-button {
-    display: inline-block;
-    padding: 15px 30px;
-    border-radius: 30px; /* Rounded corners */
-    background-color: #000000;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 24px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.top-bar .rounded-button:hover {
-    background-color: #ffffff;
-    color: #000000;
-}
-
-.button-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    background-color: #fff; /* White background for grid */
-    margin-top: 20px; /* Ensure space below top bar */
-}
-
-.button {
-    display: block;
-    text-align: center;
-    padding: 15px;
-    border-radius: 10px; /* Rounded corners */
+.button-grid .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px; /* Increased width */
+    height: 60px; /* Increased height */
+    border-radius: 30px; /* Fully rounded corners */
     background-color: #000;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
     font-size: 18px;
     transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 10px; /* Reduced space above each button */
 }
 
-.button:hover {
+.button-grid .button:hover {
     background-color: #fff;
     color: #000;
 }
