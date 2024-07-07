@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Sandboxels - Experiment with Pixels</title>
+    <title>Sandboxels</title>
     <meta name="description" content="Relax or experiment with over 500 materials in this falling sand simulator, featuring heat, chemical reactions, density, burning, explosions.">
     <meta name="keywords" content="falling sand, elements, pixel art, simulator, powder, toy, chemistry, science, educational">
     <meta name="author" content="R74n">
@@ -16403,7 +16403,6 @@ window.onload = function() {
 </head>
 
 <body>
-    <h1 class="pagetitle" id="pagetitle"><a href="https://R74n.com" class="backbutton" target="_blank">&lt;</a></h1>
     <noscript>You don't have JavaScript enabled! JavaScript is required to play Sandboxels, and most other browser tools.</noscript>
     <div id="totalWrapper">
     <div id="gameWrapper">
@@ -16459,7 +16458,6 @@ window.onload = function() {
                 <div id="categoryControls"></div>
                 <div id="elementControls"></div>
             </div>
-            <div id="extraInfo"><small><a href="https://sandboxels.r74n.com/changelog" id="changelogButton" target="_blank">Changelog</a> • <a href="https://sandboxels.R74n.com/feedback" target="_blank" style="color:lime;">Feedback</a> • <a href="https://sandboxels.wiki.gg/" target="_blank" id="wikiButton" title="Official Sandboxels Wiki - wiki.gg" style="color:white;">Wiki</a> • <a id="moreSocial" href="https://twitter.com/R74nCom" rel="me" target="_blank">Twitter</a> • <a href="https://discord.gg/ejUc6YPQuS" target="_blank" style="color:#2f60ff;">Discord</a><span id="install-button" style="display:none">&nbsp;• <a onclick="deferredPrompt.prompt(); return false" href="#" style="text-shadow: 0px 2px 10px #ff00ff; cursor:pointer">Install Offline</a></span><!--<br><br><a style="color:lime" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeYMbngtbBHZ7hkz8jpbHl7TiAItqukrhtntKgAHjH30fY08A/viewform?usp=sf_link">FILL OUT THE CENSUS<span style="color:red">(NEW)</span></a>--></small></div>
             <script>
                 // version check
                 if (!settings["lastversion"] || settings["lastversion"]!==currentversion) {
@@ -16673,132 +16671,6 @@ Cancer, Landmine, Grenade, Smoke Grenade">?</span>
 
 </div>
 
-<div id="bottomInfoBox">
-    <div id="bottomTopBox">
-        <!-- <iframe src="promo.html" style="border:none;width: 300px; height: 250px;"></iframe> -->
-        <!-- Affiliate Links -->
-        <!-- <p style="font-size:1.2em;display:none" id="aff"><a id="affLink" href="#" target="_blank" rel="sponsored">Loading...</a></p>
-        <script>
-            var aff = {};
-            var affRequest = new XMLHttpRequest();
-            affRequest.open("GET", "https://sandboxels.R74n.com/aff.json", true);
-            affRequest.onload = function() {
-                if (affRequest.status >= 200 && affRequest.status < 400) {
-                    aff = JSON.parse(affRequest.responseText);
-                    var affKeys = Object.keys(aff);
-                    var randomAff = affKeys[Math.floor(Math.random() * affKeys.length)];
-                    document.getElementById("affLink").innerHTML = aff[randomAff];
-                    document.getElementById("affLink").href = randomAff;
-                    document.getElementById("aff").style.display = "block";
-                }
-            };
-            affRequest.send();
-        </script> -->
-        <p>🌐 Language <a href="https://sandboxels.R74n.com/translate" target="_blank">[BETA]</a>: <select onchange="if (this.value === 'en'){setSetting('lang',null)}else{setSetting('lang',this.value)}location.reload()" id="langSelect">
-            <option selected value="en">English (American)</option>
-            <option value="en_gb">English (British)</option>
-            <option value="de">Deutsch</option>
-            <option value="fr">Français</option>
-            <option value="hu">Magyar</option>
-            <option value="pl">Polski</option>
-            <option value="pt_br">Português (Brasil)</option>
-            <option value="vi">Tiếng Việt</option>
-            <option value="zh_hant">繁體中文</option>
-            <option value="zh_cn">简体中文</option>
-            <optgroup label="Incomplete">
-                <option value="es">Español</option>
-                <option value="ru">Русский Язык</option>
-            </optgroup>
-        </select></p>
-        <p>Try our NEW GAME: <a href="https://R74n.com/cook/" target="_blank">Infinite Chef</a></p>
-        <p>Email us at <a href="mailto:contact@R74n.com?subject=%5BSandboxels%5D">contact@R74n.com</a> for advertising, help, or education!</p>
-        <div id="newsletterFrame">Be notified when Sandboxels and other R74n projects are updated, along with ramblings from the developer!<br><br>
-            <form action="https://news.r74n.com/api/v1/free?nojs=true" method="post" class="form _form_1mxvn_6" novalidate="" target="_blank"><input type="hidden" name="first_url" value="https://news.r74n.com/embed"><input type="hidden" name="first_referrer"><input type="hidden" name="current_url" value="https://news.r74n.com/embed"><input type="hidden" name="current_referrer"><input type="hidden" name="referral_code"><input type="hidden" name="source" value="embed"><input type="hidden" name="referring_pub_id"><input type="hidden" name="additional_referring_pub_ids">
-            <input type="email" placeholder="Type your email..." name="email" style="padding:15px"><input type="submit" value="Subscribe" style="background: rgb(23, 166, 255); padding:15px; border-radius: 20px"></input>
-            </div>
-        <style>
-            #newsletterFrame {
-                max-width: 600px;
-                margin: auto;
-                padding: 5px;
-                padding-top: 15px;
-                padding-bottom: 15px;
-                border: white solid 2px;
-            }
-        </style>
-        <!-- <iframe id="newsletteriframe" width="450" height="250" style="border:1px solid #EEE; background:black; max-width:90%" frameborder="0" scrolling="no"></iframe> -->
-        <script>
-            window.addEventListener('load', function() {
-                // document.getElementById("newsletteriframe").src = "https://news.r74n.com/embed";
-                var langSelect = document.getElementById("langSelect");
-                if (langCode) { langSelect.value = langCode }
-                else if (settings.lang) { langSelect.value = settings.lang }
-                if (lang["#lang.credit"]) {
-                    document.getElementById("langCredit").innerText = "Translation by "+lang["#lang.credit"]
-                    document.getElementById("langCredit").style.display = "block";
-                }
-            })
-        </script>
-        <p>Support development by subscribing on <a href="https://www.patreon.com/R74n" rel="me" target="_blank">our Patreon</a>! Many benefits!!</p>
-    </div>
-
-    <div id="bottomLeftBox">
-        <h2>Sandboxels Introduction</h2>
-        <p><strong><def>Sandboxels</def></strong> is a free falling-sand simulator that can be played in your browser. It features heat simulation, electricity, density, chemical reactions, cooking, and fire spread. With over 500 unique elements to play with, Sandboxels is a great way to pass the time and relax.</p>
-        <p>There are thousands of interactions between the many materials, plants, animals, fluids, and powders in the game.</p>
-        <p>Falling-sand games are a genre of sandbox games characterized by falling particles of various types.</p>
-        <p>Simply click or use your touchscreen to select a category, like <strong>Liquids</strong>, then pick an element, like <strong>Water</strong>. Drag on the canvas above to place your pixels, and watch them interact with others!</p>
-        <img src="icons/wallpaper.webp" style="width:100%" alt="Rainforest landscape made in Sandboxels" title="Rainforest landscape made in Sandboxels">
-        <p>Sandboxels has many <a href="https://sandboxels.R74n.com/education-use"></a>applications in education</a>. With a hands-on experience, it can give students an understanding of emerging phenomena in many fields, such as biology, chemistry, ecology, geology, cooking, and even virology. There are countless aspects to discover.</p>
-        <p>We have a thriving community on <a href="https://discord.gg/ejUc6YPQuS" target="_blank">Discord</a>! There you can post feedback or share your creations.</p>
-        <!-- <p>If you'd like to support us, consider donating on <a href="https://www.paypal.com/donate/?hosted_button_id=GCX4VHQ7SZWTN" target="_blank">PayPal</a> or <a href="https://cash.app/$emojiartist" target="_blank" title="$emojiartist">CashApp</a>, or subscribing on Discord.</p> -->
-        <p>Business inquiries? Education stories? Help needed? Email us at <a href="mailto:contact@R74n.com?subject=%5BSandboxels%5D">contact@R74n.com</a>!</p>
-        <p>More links: <a href="https://sandboxels.R74n.com/help" rel="help">Help</a> • <a href="https://sandboxels.R74n.com/tips">Tips</a> • <a href="https://sandboxels.R74n.com/mod-list">Mods</a> • <a href="https://sandboxels.R74n.com/mobile-use">Mobile</a> • <a href="https://sandboxels.R74n.com/offline-use">Offline</a> • <a href="https://R74n.com/privacy">Privacy</a></p>
-        <p>Thanks to: Serioustar, ggod, Midi_png, personman, fnl4y, PitsPower, swagg boi, moss, kaeud, WeiChei, Trent, u2ce</p>
-        <p style="display:none" id="langCredit">Translation by R74n</p>
-        <p>Sandboxels is developed by R74n. Check out <a href="https://R74n.com" rel="author" target="_blank">our other projects</a>!</p>
-        <script>
-            // add the above elements programmatically when the page loads
-            window.addEventListener('load', function() {
-                var adscript1 = document.createElement('script');
-                adscript1.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8485284630785740";
-                adscript1.crossorigin = "anonymous";
-                document.getElementById('bottomLeftBox').appendChild(adscript1);
-                var ins1 = document.createElement('ins');
-                ins1.className = "adsbygoogle";
-                ins1.style = "display:inline-block;width:728px;height:90px";
-                ins1.setAttribute('data-ad-client', "ca-pub-8485284630785740");
-                ins1.setAttribute('data-ad-slot', "9484672079");
-                document.getElementById('bottomLeftBox').appendChild(ins1);
-                var adscript2 = document.createElement('script');
-                adscript2.innerHTML = "(adsbygoogle = window.adsbygoogle || []).push({});";
-                document.getElementById('bottomLeftBox').appendChild(adscript2);
-            })
-        </script>
-    </div>
-    <div id="bottomRightBox">
-        <h2>Controls</h2>
-        <table id="controlsTable">
-            <tr><td>Draw pixels</td>   <td><kbd>Left Click</kbd></td></tr>
-            <tr><td>Erase pixels</td>   <td><kbd>Right Click</kbd></td></tr>
-            <tr><td>Pick element</td>   <td><kbd>Middle Click</kbd></td></tr>
-            <tr><td>Pause simulation</td>   <td><kbd>Space</kbd> or <kbd>P</kbd></td></tr>
-            <tr><td>Intensify effect</td>   <td><kbd>Shift</kbd> + <kbd style="background-color:red;">Heat</kbd>/<kbd style="background-color:blue;">Cool</kbd>/<kbd style="background-color:#c1cfb6;color:black">Drag</kbd>/<kbd style="background-color:#fff4b5;color:black">Mix</kbd></td></tr>
-            <tr><td>Draw line</td>   <td><kbd>Shift</kbd> + <kbd>Click</kbd></td></tr>
-            <tr><td>Change cursor size</td>   <td><kbd>Scroll</kbd> or <kbd>+</kbd><kbd>-</kbd> or <kbd>[</kbd><kbd>]</kbd></td></tr>
-            <tr><td>Change category</td>   <td><kbd>←</kbd><kbd>→</kbd></td></tr>
-            <tr><td>Select by name</td>   <td><kbd>E</kbd></td></tr>
-            <tr><td>Element info</td>   <td><kbd>I</kbd> or <kbd>/</kbd></td></tr>
-            <tr><td>Open settings</td>   <td><kbd>\</kbd></td></tr>
-            <tr><td>Reset canvas</td>   <td><kbd>R</kbd></td></tr>
-            <tr><td>Single step</td>   <td><kbd>&gt;</kbd></td></tr>
-            <tr><td>Fullscreen</td>   <td><kbd>F</kbd> or <kbd>F11</kbd></td></tr>
-            <tr><td>Change view</td>   <td><kbd>1</kbd><kbd>2</kbd><kbd>3</kbd><kbd>4</kbd></td></tr>
-            <tr><td>Toggle GUI</td>   <td><kbd>F1</kbd></td></tr>
-            <tr><td>Capture screenshot</td>   <td><kbd>C</kbd> or <kbd>F2</kbd></td></tr>
-            <tr><td colspan="2" style="text-align:center"><strong><a href="https://sandboxels.r74n.com/controls" target="_blank" title="Open the controls file">More controls</a></strong></td></tr>
-        </table>
-    </div>
 </div>
 </div>
 
