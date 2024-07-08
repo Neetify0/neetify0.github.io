@@ -403,7 +403,7 @@ oh forget it this is just a mess
 .offWeb .supportComment,.offWeb .adBanner,.offWeb #support,.offWeb #smallSupport,.offWeb .ad{display:none;}
 
 .offWeb #topBar{display:none;}
-.onWeb #topBar{visibility:visible;}
+.onWeb #topBar{visibility:invisible;}
 #topBar
 {
 	visibility:hidden;
@@ -412,7 +412,6 @@ oh forget it this is just a mess
 	top:0px;
 	width:100%;
 	height:32px;
-	background:url(img/darkNoiseTopBar.jpg) repeat-x bottom;
 	color:#ccc;
 }
 #topBar>div
