@@ -65,7 +65,7 @@ body {
 .button-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Increased min-width */
-    gap: 10px; /* Reduced gap between buttons */
+    gap: 17px; /* Reduced gap between buttons */
     padding: 20px;
     background-color: #fff; /* White background for grid */
     margin-top: 20px; /* Ensure space below navbar */
@@ -75,7 +75,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 180px; /* Increased width */
+    width: 200px; /* Increased width */
     height: 60px; /* Increased height */
     border-radius: 30px; /* Fully rounded corners */
     background-color: #000;
