@@ -6,6 +6,9 @@ games_folder = '/Users/navaneet/Downloads/neetify0.github.io/games'  # Update th
 # Get the list of games from the folder
 games = [game for game in os.listdir(games_folder) if os.path.isdir(os.path.join(games_folder, game))]
 
+# Sort the games alphabetically
+games.sort()
+
 # Generate the HTML content
 html_content = '''<!DOCTYPE html>
 <html lang="en">
@@ -46,7 +49,7 @@ html_content += '''    </div>
 '''
 
 # Define the path to the output HTML file
-output_html_file = '/Users/navaneet/Downloads/neetify0.github.io/your_new_file.html'  # Update this with the desired output path
+output_html_file = '/Users/navaneet/Downloads/neetify0.github.io/games/your_new_file.html'  # Update this with the desired output path
 
 # Write the HTML content to the file
 with open(output_html_file, 'w') as file:
