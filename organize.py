@@ -46,7 +46,7 @@ html_content += '''    </div>
 '''
 
 # Define the path to the output HTML file
-output_html_file = '/Users/navaneet/Downloads/'  # Update this with the desired output path
+output_html_file = '/Users/navaneet/Downloads/neetify0.github.io/your_new_file.html'  # Update this with the desired output path
 
 # Write the HTML content to the file
 with open(output_html_file, 'w') as file:
