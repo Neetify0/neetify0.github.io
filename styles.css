@@ -13,9 +13,22 @@ body {
     padding: 10px 20px;
 }
 
-.logo img {
-    width: 60px; /* Increased logo size */
+/* Existing styles remain unchanged */
+
+.logo-img {
+    width: 60px; /* Initial size */
     height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.logo-img:hover {
+    transform: scale(1.1); /* Enlarge on hover */
+}
+
+.logo a {
+    display: block; /* Ensure the entire area is clickable */
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
 }
 
 .nav-links {
