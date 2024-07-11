@@ -1,3 +1,5 @@
+/* styles.css */
+
 body {
     margin: 0;
     font-family: 'Lexend', sans-serif;
@@ -13,22 +15,21 @@ body {
     padding: 10px 20px;
 }
 
-/* Existing styles remain unchanged */
+.logo {
+    display: flex;
+    align-items: center;
+}
 
 .logo-img {
     width: 60px; /* Initial size */
-    height: auto; /* Maintain aspect ratio */
+    height: 60px; /* Make logo image always a circle */
+    object-fit: cover; /* Ensure image covers the container */
+    border-radius: 50%; /* Make it circular */
     transition: transform 0.3s ease; /* Smooth transition for scaling */
 }
 
 .logo-img:hover {
     transform: scale(1.1); /* Enlarge on hover */
-}
-
-.logo a {
-    display: block; /* Ensure the entire area is clickable */
-    text-decoration: none; /* Remove underline */
-    color: inherit; /* Inherit text color */
 }
 
 .nav-links {
