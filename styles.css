@@ -1,23 +1,33 @@
 /* styles.css */
 
+/* Existing styles */
+
 body {
     margin: 0;
     font-family: 'Lexend', sans-serif;
-    background-color: #fff; /* Set body background to white */
+    background-color: #fff; /* Default light mode background */
+    color: #000; /* Default light mode text color */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+}
+
+body.dark-mode {
+    background-color: #000; /* Dark mode background */
+    color: #fff; /* Dark mode text color */
 }
 
 .navbar {
-    background-color: #fff; /* White background */
-    color: #000; /* Black text color */
+    background-color: #fff; /* Default light mode background */
+    color: #000; /* Default light mode text color */
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for navbar colors */
 }
 
-.logo {
-    display: flex;
-    align-items: center;
+body.dark-mode .navbar {
+    background-color: #000; /* Dark mode navbar background */
+    color: #fff; /* Dark mode navbar text color */
 }
 
 .logo-img {
@@ -49,11 +59,15 @@ body {
 
 .nav-links li a {
     text-decoration: none;
-    color: #000; /* Black text color */
+    color: #000; /* Default light mode text color */
     font-weight: 500; /* Medium weight */
     font-size: 20px; /* Slightly larger font size */
     transition: color 0.3s ease; /* Smooth transition for color */
     position: relative; /* Ensure relative positioning for pseudo-element */
+}
+
+body.dark-mode .nav-links li a {
+    color: #fff; /* Dark mode text color */
 }
 
 .nav-links li a::after {
@@ -72,8 +86,12 @@ body {
 .nav-links li a:hover::after {
     bottom: -4px; /* Adjust underline position */
     height: 4px; /* Increase underline height */
-    background-color: #000; /* Black underline color */
+    background-color: #000; /* Light mode underline color */
     transform: scaleX(1); /* Expand underline on hover */
+}
+
+body.dark-mode .nav-links li a:hover::after {
+    background-color: #fff; /* Dark mode underline color */
 }
 
 .button-grid {
@@ -81,8 +99,12 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Increased min-width */
     gap: 17px; /* Reduced gap between buttons */
     padding: 20px;
-    background-color: #fff; /* White background for grid */
+    background-color: #fff; /* Default light mode background */
     margin-top: 20px; /* Ensure space below navbar */
+}
+
+body.dark-mode .button-grid {
+    background-color: #000; /* Dark mode background */
 }
 
 .button-grid .button {
@@ -92,8 +114,8 @@ body {
     width: 200px; /* Increased width */
     height: 60px; /* Increased height */
     border-radius: 30px; /* Fully rounded corners */
-    background-color: #000;
-    color: #fff;
+    background-color: #000; /* Default light mode button background */
+    color: #fff; /* Default light mode button text */
     text-decoration: none;
     font-weight: 500;
     font-size: 18px;
@@ -101,7 +123,30 @@ body {
     margin-top: 10px; /* Reduced space above each button */
 }
 
+body.dark-mode .button-grid .button {
+    background-color: #fff; /* Dark mode button background */
+    color: #000; /* Dark mode button text */
+}
+
 .button-grid .button:hover {
-    background-color: #fff;
-    color: #000;
+    background-color: #fff; /* Light mode button hover background */
+    color: #000; /* Light mode button hover text */
+}
+
+body.dark-mode .button-grid .button:hover {
+    background-color: #000; /* Dark mode button hover background */
+    color: #fff; /* Dark mode button hover text */
+}
+
+.dark-mode-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit; /* Inherit current text color */
+    font-size: 20px; /* Adjust icon size */
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.dark-mode-toggle i {
+    pointer-events: none; /* Disable pointer events for the icon */
 }
