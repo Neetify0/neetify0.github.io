@@ -1,4 +1,4 @@
-/* New Circle Grid Styles */
+/* Light mode styles */
 
 .circle-grid {
     display: grid;
@@ -25,4 +25,10 @@
 
 .circle:hover img {
     transform: scale(1.1); /* Enlarge image on hover */
+}
+
+/* Dark mode styles for circle grid */
+
+.dark-mode .circle-grid {
+    background-color: #000000; /* Complete black background */
 }
