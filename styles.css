@@ -22,7 +22,7 @@ body.dark-mode {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for navbar colors */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
 }
 
 body.dark-mode .navbar {
@@ -62,8 +62,8 @@ body.dark-mode .navbar {
     color: #000; /* Default light mode text color */
     font-weight: 500; /* Medium weight */
     font-size: 20px; /* Slightly larger font size */
-    transition: color 0.3s ease; /* Smooth transition for color */
     position: relative; /* Ensure relative positioning for pseudo-element */
+    transition: color 0.3s ease; /* Smooth transition for text color */
 }
 
 body.dark-mode .nav-links li a {
@@ -101,6 +101,7 @@ body.dark-mode .nav-links li a:hover::after {
     padding: 20px;
     background-color: #fff; /* Default light mode background */
     margin-top: 20px; /* Ensure space below navbar */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
 }
 
 body.dark-mode .button-grid {
@@ -119,8 +120,8 @@ body.dark-mode .button-grid {
     text-decoration: none;
     font-weight: 500;
     font-size: 18px;
-    transition: background-color 0.3s ease, color 0.3s ease;
     margin-top: 10px; /* Reduced space above each button */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
 }
 
 body.dark-mode .button-grid .button {
@@ -144,7 +145,6 @@ body.dark-mode .button-grid .button:hover {
     cursor: pointer;
     color: inherit; /* Inherit current text color */
     font-size: 20px; /* Adjust icon size */
-    transition: color 0.3s ease; /* Smooth transition for color */
 }
 
 .dark-mode-toggle i {
