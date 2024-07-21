@@ -150,3 +150,72 @@ body.dark-mode .button-grid .button:hover {
 .dark-mode-toggle i {
     pointer-events: none; /* Disable pointer events for the icon */
 }
+
+/* Add these styles to your existing CSS file */
+
+/* Form styling */
+form[name="contact"] {
+    max-width: 600px; /* Limit form width */
+    margin: 20px auto; /* Center align and provide margin */
+    padding: 20px; /* Add padding inside the form */
+    background-color: #fff; /* Default light mode background */
+    border-radius: 10px; /* Rounded corners for the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+body.dark-mode form[name="contact"] {
+    background-color: #333; /* Dark mode background */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Dark mode shadow */
+}
+
+form[name="contact"] p {
+    margin-bottom: 15px; /* Spacing between form inputs */
+}
+
+form[name="contact"] label {
+    font-weight: 500; /* Medium font weight */
+}
+
+form[name="contact"] input[type="text"],
+form[name="contact"] input[type="email"],
+form[name="contact"] input[type="Feedback"] {
+    width: 100%; /* Full width input fields */
+    padding: 10px; /* Padding inside input fields */
+    margin-top: 5px; /* Spacing above inputs */
+    border: 1px solid #ccc; /* Light border for inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+    transition: border-color 0.3s ease; /* Smooth transition for border */
+}
+
+form[name="contact"] input[type="text"]:focus,
+form[name="contact"] input[type="email"]:focus,
+form[name="contact"] input[type="Feedback"]:focus {
+    border-color: #555; /* Darker border on focus */
+}
+
+form[name="contact"] button[type="submit"] {
+    padding: 10px 20px; /* Padding inside the button */
+    background-color: #000; /* Default light mode button color */
+    color: #fff; /* Text color for the button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Button text size */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+body.dark-mode form[name="contact"] button[type="submit"] {
+    background-color: #fff; /* Dark mode button background */
+    color: #000; /* Dark mode button text color */
+}
+
+form[name="contact"] button[type="submit"]:hover {
+    background-color: #333; /* Light mode button hover background */
+    color: #fff; /* Light mode button hover text color */
+}
+
+body.dark-mode form[name="contact"] button[type="submit"]:hover {
+    background-color: #ccc; /* Dark mode button hover background */
+    color: #000; /* Dark mode button hover text color */
+}
