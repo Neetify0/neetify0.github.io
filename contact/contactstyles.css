@@ -1,0 +1,84 @@
+/* Form styling */
+form[name="contact"] {
+    max-width: 600px; /* Limit form width */
+    margin: 20px 0 20px 20px; /* Center align and provide margin */
+    padding: 20px; /* Add padding inside the form */
+    background-color: #ffffff00; /* Default light mode background */
+    border-radius: 30px; /* Rounded corners for the form */
+    box-shadow: none; /* Remove shadow */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    font-family: 'Lexend', sans-serif; /* Ensure Lexend font */
+}
+
+form[name="contact"] p {
+    margin-bottom: 15px; /* Spacing between form inputs */
+}
+
+form[name="contact"] label {
+    font-weight: 500; /* Medium font weight */
+    font-size: 18px; /* Increase label font size */
+}
+
+form[name="contact"] input[type="text"],
+form[name="contact"] input[type="email"],
+form[name="contact"] input[type="Feedback"] {
+    width: 100%; /* Full width input fields */
+    padding: 10px; /* Padding inside input fields */
+    margin-top: 5px; /* Spacing above inputs */
+    border: 1px solid #ccc; /* Add border to input fields */
+    border-radius: 15px; /* Rounded corners for inputs */
+    transition: border-color 0.3s ease; /* Smooth transition for border */
+    font-family: 'Lexend', sans-serif; /* Ensure Lexend font */
+    font-size: 20px; /* Increase input text size */
+}
+
+form[name="contact"] input[type="text"]:focus,
+form[name="contact"] input[type="email"]:focus,
+form[name="contact"] input[type="Feedback"]:focus {
+    border-color: #555; /* Darker border on focus */
+}
+
+.feedback-box {
+    width: 100%; /* Full width for feedback box */
+    padding: 20px; /* Increase padding for feedback box */
+    border: 1px solid #ccc; /* Add border to feedback box */
+    border-radius: 30px; /* Rounded corners for feedback box */
+    font-size: 20px; /* Increase font size for feedback box */
+}
+
+/* Apply the same styling as the button grid */
+form[name="contact"] button[type="submit"] {
+    padding: 15px 30px; /* Padding inside the button */
+    background-color: #000000; /* Button grid background color */
+    color: #fff; /* Text color for the button */
+    border: none; /* No border */
+    border-radius: 30px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 18px; /* Button text size */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+    font-family: 'Lexend', sans-serif; /* Ensure Lexend font */
+}
+
+/* Style the feedback input field as a paragraph box */
+form[name="contact"] input[type="Feedback"] {
+    padding: 15px; /* Add padding inside feedback input */
+    font-size: 20px; /* Increase font size for feedback input */
+    height: 150px; /* Set a fixed height for the feedback input */
+    resize: vertical; /* Allow vertical resizing of the input */
+}
+
+form[name="contact"] button[type="submit"]:hover {
+    background-color: #ffffff; /* Button grid hover background color */
+    color: #000000; /* Button grid hover text color */
+}
+
+/* Dark Mode - Invert colors for Send button */
+.dark-mode form[name="contact"] button[type="submit"] {
+    background-color: #fff; /* Invert background color */
+    color: #000; /* Invert text color */
+}
+
+.dark-mode form[name="contact"] button[type="submit"]:hover {
+    background-color: #000; /* Invert hover background color */
+    color: #fff; /* Invert hover text color */
+}
