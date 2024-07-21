@@ -1,11 +1,46 @@
-<form name="contact" netlify>
-    <p>
-      <label>Name <input type="text" name="name" /></label>
-    </p>
-    <p>
-      <label>Email <input type="email" name="email" /></label>
-    </p>
-    <p>
-      <button type="submit">Send</button>
-    </p>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neetify</title>
+    <link rel="icon" type="image/x-icon" href="../logo.ico"> <!-- Specify favicon.ico here -->
+    <link rel="stylesheet" href="../styles.css"> <!-- Link to external CSS file -->
+    <link href='https://fonts.googleapis.com/css?family=Lexend:500' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="../"> <!-- Replace with your actual link -->
+            <div class="logo">
+                <img src="../PFP.png" class="logo-img">
+            </div>
+        </a>
+        <ul class="nav-links">
+            <li><button class="dark-mode-toggle"><i class="fa fa-sun"></i></button></li>
+            <li><a href="/">HOME</a></li>
+            <li><a href=".">APPS</a></li>
+            <li><a href="../games">GAMES</a></li>
+            <li><a href="../users">USERS</a></li>
+            <li><a href="../contact">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <form name="contact" netlify>
+        <p>
+          <label>Name <input type="text" name="name" /></label>
+        </p>
+        <p>
+          <label>Email <input type="email" name="email" /></label>
+        </p>
+        <p>
+            <label>Feedback <input type="text" name="text" /></label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+    </form>
+
+    <script src="../toggle-dark-mode.js"></script>
+</body>
+</html>
