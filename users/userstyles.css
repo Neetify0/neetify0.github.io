@@ -1,0 +1,36 @@
+/* Light mode styles */
+
+.circle-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Adjusted column width */
+    gap: 20px; /* Increased gap between circles */
+    padding: 20px;
+    background-color: #fff; /* White background for grid */
+    margin-top: 20px; /* Ensure space below navbar */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.circle {
+    width: 120px; /* Circle width */
+    height: 120px; /* Circle height */
+    border-radius: 50%; /* Circular shape */
+    overflow: hidden; /* Ensure images fit within circle */
+}
+
+.circle img {
+    width: 100%; /* Ensure image fills circle */
+    height: 100%; /* Ensure image fills circle */
+    object-fit: cover; /* Maintain aspect ratio and cover area */
+    transition: transform 0.3s ease; /* Smooth scale transition on hover */
+}
+
+.circle:hover img {
+    transform: scale(1.1); /* Enlarge image on hover */
+}
+
+/* Dark mode styles for circle grid */
+
+.dark-mode .circle-grid {
+    background-color: #000000; /* Complete black background */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
